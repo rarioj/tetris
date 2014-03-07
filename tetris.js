@@ -40,8 +40,7 @@ var TETRIS = {
     },
     ScoreMultiplier: 10, // Score multiplier
     StartingSpeed: 1000, // Starting interval speed (in microsecond)
-    VoidColor: '#fafafa', // Color of a blank/void block (in HTML color)
-    Miscellaneous: {}
+    VoidColor: '#fafafa' // Color of a blank/void block (in HTML color)
   },
 
   // ========= //
@@ -182,7 +181,7 @@ var TETRIS = {
           col.setAttribute('control', '0');
           col.style.width = ($T.config.BlockSize) + 'px';
           col.style.height = ($T.config.BlockSize) + 'px';
-          col.style.float = 'left';
+          col.style.cssFloat = 'left';
           col.style.backgroundColor = $T.config.VoidColor;
           row.appendChild(col);
         }
